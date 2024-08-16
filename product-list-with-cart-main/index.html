@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="modal-cart">
+
+    <div class="modal-cart-content">
+      <img class="icon-confirmed" src="./assets/images/icon-order-confirmed.svg" alt="icon-order-confirmed">
+      <h3 class="order-confirmed">Order Confirmed</h3>
+      <p class="message-order-confirmed">We hope you enjoy your food</p>
+
+      <div class="buy-products">
+        
+      </div>
+
+      <button class="new-order">Start New Order</button>
+    </div>
+
+
+  </div>
+  <header class="header">
+    <h1 class="desserts">Desserts</h1>
+  </header>
+
+
+
+  <section class="main" id="main">
+
+    <template class="template">
+      <div class="wrap">
+        <img>
+        <p class="product"></p>
+        <p class="category"></p>
+        <p class="price"></p>
+        <button class="button"><img class="add-cart-icon" src="./assets/images/icon-add-to-cart.svg"
+            alt="add-cart-icon"> Add to Cart</button>
+        <button class="button2">
+          <div class="minus"></div><input type="text" value="1">
+          <div class="plus"></div>
+        </button>
+      </div>
+    </template>
+
+  </section>
+
+  <div class="background-empty">
+    <h2>Your Cart (0)</h2>
+    <p class="description-empty-cart">
+      Your added items will appear here
+    </p>
+  </div>
+  <section class="cart-container">
+    <h2>Your Cart (0)</h2>
+
+    </div>
+    <div class="container-product-card">
+      <!--Cart-->
+    </div>
+
+    <div class="cart-order-total">
+      <div class="order-total">Order Total:</div>
+      <div class="cart-total-price"><span>0</span></div>
+    </div>
+    <div class="cart-description-delivery">This is a <span>carbon-neutral</span> delivery</div>
+    <button class="cart-button-confirm">Confirm Order</button>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">CAMILO VICTOR MURT TAMAYO</a>.
+
+  </div>
+
+  <script src="./script.js" type="module"></script>
+</body>
+
+</html>
