@@ -191,7 +191,7 @@ function drawCart() {
 function getTotal(object) {
   let count = Object.values(object).reduce((acc, el) => acc + el.quantity, 0);
 
-  d.querySelector("h2").innerHTML = `Your Cart (${count})`;
+  d.querySelector(".cart-count").innerHTML = `Your Cart (${count})`;
 
   
 }
